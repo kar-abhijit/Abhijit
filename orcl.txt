@@ -1,2 +1,4 @@
 select * from employees;
-
+select e.name, e.salary, d.dept_no, l.location from employees e
+inner join departments d as e.dept_id=d.dept_id
+inner join locations l as d.location_id=l.location_id;
